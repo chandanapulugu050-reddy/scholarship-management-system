@@ -1,0 +1,115 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scholarship Management - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Scholarship Management System</h1>
+    <nav class="top-left">
+      <a href="home.html">Home</a>
+      <a href="index.html">Login</a>
+      <a href="student.html">Register</a>
+      <a href="admin.html">Admin</a>
+      <a href="about.html">About us</a>
+      <a href="feed.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Available Scholarships</h2>
+    <div id="homeScholarshipList" class="scholarship-grid">
+
+      <div class="card"><img src="https://sp.yimg.com/ib/th/id/OIP.cSAqjsXDn9RxoqTLjRhfyQHaE7?pid=Api&w=148&h=148&c=7&dpr=2&rs=1.jpg"><h3>Merit Scholarship</h3><p>50,000</p><button onclick="applyScholarship('Merit Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.bNb_XNThqsGDSV5Lq_wvjwHaEK?pid=Api&P=0&h=180.jpg"><h3>Need-Based Scholarship</h3><p>25,500</p><button onclick="applyScholarship('Need-Based Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.A5sex9s3NpjnQK3DIrimigHaEL?pid=Api&P=0&h=180.jpg"><h3>Sports Excellence Scholarship</h3><p>60,000</p><button onclick="applyScholarship('Sports Excellence Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.CdE7UT2J6WFd0PnLaXAGewHaEU?pid=Api&P=0&h=180.jpg"><h3>Science Innovation Scholarship</h3><p>55,000</p><button onclick="applyScholarship('Science Innovation Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.hHgksn40x37uc-JHO60DVAHaE7?pid=Api&P=0&h=180.jpg"><h3>Arts & Culture Scholarship</h3><p>60,000</p><button onclick="applyScholarship('Arts & Culture Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.OLPLPZ2tg_YotYfGgDThsQHaE7?pid=Api&P=0&h=180.jpg"><h3>Technology Leaders Scholarship</h3><p>$2500</p><button onclick="applyScholarship('Technology Leaders Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.t3M-ldiSQOQ_Z-Fj4FYjqgHaEP?pid=Api&P=0&h=180.jpg"><h3>Community Service Scholarship</h3><p>$1000</p><button onclick="applyScholarship('Community Service Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.X12s8vqdVa6faCAp261vaAHaHa?pid=Api&P=0&h=180.jpg"><h3>Women in STEM Scholarship</h3><p>$2200</p><button onclick="applyScholarship('Women in STEM Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.BrAzem6KPqxbdUieMcRyUgHaFj?pid=Api&P=0&h=180.jpg"><h3>Global Scholars Program</h3><p>$3000</p><button onclick="applyScholarship('Global Scholars Program')">Apply</button></div>
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.kYTxu1iGz3qSmV2e1oqoQAHaFK?pid=Api&P=0&h=180.jpg"><h3>Leadership Excellence Scholarship</h3><p>$2000</p><button onclick="applyScholarship('Leadership Excellence Scholarship')">Apply</button></div>
+  
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.IcqJ17W0BIKPZv4bMVsk3QHaEK?pid=Api&P=0&h=180.jpg"><h3>Medical Research Scholarship</h3><p>$2500</p><button onclick="applyScholarship('Medical Research Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.kJWDWddqbcsqQN1Og_0c9wHaFB?pid=Api&P=0&h=180.jpg"><h3>Business Leaders Scholarship</h3><p>$1800</p><button onclick="applyScholarship('Business Leaders Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.TA-4OejyEOODTZ1pMOEyGgHaE8?pid=Api&P=0&h=180.jpg"><h3>Environmental Studies Scholarship</h3><p>$1600</p><button onclick="applyScholarship('Environmental Studies Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.0zzoICKNEPbarRzdewtZhgHaGQ?pid=Api&P=0&h=180.jpg"><h3>Mathematics Excellence Scholarship</h3><p>$2100</p><button onclick="applyScholarship('Mathematics Excellence Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.9rAlOtHNWDRRy4V9JWaGjgHaE7?pid=Api&P=0&h=180.jpg"><h3>History Scholars Program</h3><p>$1400</p><button onclick="applyScholarship('History Scholars Program')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.QZW1a4sirTXUG-SCY_N6wAHaE8?pid=Api&P=0&h=180.jpg"><h3>Law & Justice Scholarship</h3><p>$2300</p><button onclick="applyScholarship('Law & Justice Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.u79-0MVuGuGcCUMcyAxzfgHaEK?pid=Api&P=0&h=180.jpg"><h3>Engineering Excellence Scholarship</h3><p>$2600</p><button onclick="applyScholarship('Engineering Excellence Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.hfoQchpjbQbQ3E05wGh8yAHaEK?pid=Api&P=0&h=180.jpg"><h3>Artificial Intelligence Scholarship</h3><p>$2800</p><button onclick="applyScholarship('Artificial Intelligence Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.QwvjP4a6KJTetXnHaL1c-gHaEO?pid=Api&P=0&h=180.jpg"><h3>Philosophy Scholars Program</h3><p>$1200</p><button onclick="applyScholarship('Philosophy Scholars Program')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.8_9COZBUGN3szGzH-Y4QNAHaE6?pid=Api&P=0&h=180.jpg"><h3>Music Talent Scholarship</h3><p>$1700</p><button onclick="applyScholarship('Music Talent Scholarship')">Apply</button></div>
+      
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scholarship Management - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Scholarship Management System</h1>
+    <nav class="top-left">
+      <a href="home.html">Home</a>
+      <a href="index.html">Login</a>
+      <a href="student.html">Register</a>
+      <a href="admin.html">Admin</a>
+      <a href="about.html">About us</a>
+      <a href="feed.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Available Scholarships</h2>
+    <div id="homeScholarshipList" class="scholarship-grid">
+      
+      <!-- SAME cards, only alt added -->
+      <div class="card"><img src="https://sp.yimg.com/ib/th/id/OIP.cSAqjsXDn9RxoqTLjRhfyQHaE7?pid=Api&w=148&h=148&c=7&dpr=2&rs=1.jpg" alt="Merit Scholarship"><h3>Merit Scholarship</h3><p>50,000</p><button onclick="applyScholarship('Merit Scholarship')">Apply</button></div>
+
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.bNb_XNThqsGDSV5Lq_wvjwHaEK?pid=Api&P=0&h=180.jpg" alt="Need-Based Scholarship"><h3>Need-Based Scholarship</h3><p>25,500</p><button onclick="applyScholarship('Need-Based Scholarship')">Apply</button></div>
+
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.A5sex9s3NpjnQK3DIrimigHaEL?pid=Api&P=0&h=180.jpg" alt="Sports Excellence Scholarship"><h3>Sports Excellence Scholarship</h3><p>60,000</p><button onclick="applyScholarship('Sports Excellence Scholarship')">Apply</button></div>
+
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.CdE7UT2J6WFd0PnLaXAGewHaEU?pid=Api&P=0&h=180.jpg" alt="Science Innovation Scholarship"><h3>Science Innovation Scholarship</h3><p>55,000</p><button onclick="applyScholarship('Science Innovation Scholarship')">Apply</button></div>
+
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.hHgksn40x37uc-JHO60DVAHaE7?pid=Api&P=0&h=180.jpg" alt="Arts & Culture Scholarship"><h3>Arts & Culture Scholarship</h3><p>60,000</p><button onclick="applyScholarship('Arts & Culture Scholarship')">Apply</button></div>
+            <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.OLPLPZ2tg_YotYfGgDThsQHaE7?pid=Api&P=0&h=180.jpg"><h3>Technology Leaders Scholarship</h3><p>$2500</p><button onclick="applyScholarship('Technology Leaders Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.t3M-ldiSQOQ_Z-Fj4FYjqgHaEP?pid=Api&P=0&h=180.jpg"><h3>Community Service Scholarship</h3><p>$1000</p><button onclick="applyScholarship('Community Service Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.X12s8vqdVa6faCAp261vaAHaHa?pid=Api&P=0&h=180.jpg"><h3>Women in STEM Scholarship</h3><p>$2200</p><button onclick="applyScholarship('Women in STEM Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.BrAzem6KPqxbdUieMcRyUgHaFj?pid=Api&P=0&h=180.jpg"><h3>Global Scholars Program</h3><p>$3000</p><button onclick="applyScholarship('Global Scholars Program')">Apply</button></div>
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.kYTxu1iGz3qSmV2e1oqoQAHaFK?pid=Api&P=0&h=180.jpg"><h3>Leadership Excellence Scholarship</h3><p>$2000</p><button onclick="applyScholarship('Leadership Excellence Scholarship')">Apply</button></div>
+  
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.IcqJ17W0BIKPZv4bMVsk3QHaEK?pid=Api&P=0&h=180.jpg"><h3>Medical Research Scholarship</h3><p>$2500</p><button onclick="applyScholarship('Medical Research Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.kJWDWddqbcsqQN1Og_0c9wHaFB?pid=Api&P=0&h=180.jpg"><h3>Business Leaders Scholarship</h3><p>$1800</p><button onclick="applyScholarship('Business Leaders Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.TA-4OejyEOODTZ1pMOEyGgHaE8?pid=Api&P=0&h=180.jpg"><h3>Environmental Studies Scholarship</h3><p>$1600</p><button onclick="applyScholarship('Environmental Studies Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.0zzoICKNEPbarRzdewtZhgHaGQ?pid=Api&P=0&h=180.jpg"><h3>Mathematics Excellence Scholarship</h3><p>$2100</p><button onclick="applyScholarship('Mathematics Excellence Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.9rAlOtHNWDRRy4V9JWaGjgHaE7?pid=Api&P=0&h=180.jpg"><h3>History Scholars Program</h3><p>$1400</p><button onclick="applyScholarship('History Scholars Program')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.QZW1a4sirTXUG-SCY_N6wAHaE8?pid=Api&P=0&h=180.jpg"><h3>Law & Justice Scholarship</h3><p>$2300</p><button onclick="applyScholarship('Law & Justice Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.u79-0MVuGuGcCUMcyAxzfgHaEK?pid=Api&P=0&h=180.jpg"><h3>Engineering Excellence Scholarship</h3><p>$2600</p><button onclick="applyScholarship('Engineering Excellence Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.hfoQchpjbQbQ3E05wGh8yAHaEK?pid=Api&P=0&h=180.jpg"><h3>Artificial Intelligence Scholarship</h3><p>$2800</p><button onclick="applyScholarship('Artificial Intelligence Scholarship')">Apply</button></div>
+      <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.QwvjP4a6KJTetXnHaL1c-gHaEO?pid=Api&P=0&h=180.jpg"><h3>Philosophy Scholars Program</h3><p>$1200</p><button onclick="applyScholarship('Philosophy Scholars Program')">Apply</button></div>
+      <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.8_9COZBUGN3szGzH-Y4QNAHaE6?pid=Api&P=0&h=180.jpg"><h3>Music Talent Scholarship</h3><p>$1700</p><button onclick="applyScholarship('Music Talent Scholarship')">Apply</button></div>
+
+      <!-- migatha cards same -->
+      
+    </div>
+  </main>
+
+  <!-- 🔥 IMPORTANT: script ikkada undali -->
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+
+</body>
+</html>
